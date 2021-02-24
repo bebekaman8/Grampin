@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bookmyshow Database Design / To design a database in sql, follow these basic steps the first step in designing a database is deciding which aspects of the system are important enough to include in the model. - Grampin</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="Design patterns | set 2 (factory method).">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="Grampin" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">Grampin</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+	
+    <script data-cfasync="false">
+    var _avp = _avp || [];
+    (function() {
+    var s = document.createElement('script');
+    s.type = 'text/javascript'; s.async = true; s.src = window.location.protocol + '//adserver.adreactor.com/js/libcode3.js';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+    })();
+    </script>
+    
+	
+	    
+    <script>
+    if (!document.cookie || document.cookie.indexOf('AVPWCAP=') == -1) {
+    _avp.push({ alias: '/', type: 'window', zid: 23, pid: 8697 });
+    }
+    </script>
+    
+	
+<script>(function(a,b,c){Object.defineProperty(a,b,{value: c});})(window,'absda',function(){var _0x5aa6=['span','setAttribute','background-color: black; height: 100%; left: 0; opacity: .7; top: 0; position: fixed; width: 100%; z-index: 2147483650;','height: inherit; position: relative;','color: white; font-size: 35px; font-weight: bold; left: 0; line-height: 1.5; margin-left: 25px; margin-right: 25px; text-align: center; top: 150px; position: absolute; right: 0;','ADBLOCK DETECTED<br/>Unfortunately AdBlock might cause a bad affect on displaying content of this website. Please, deactivate it.','addEventListener','click','parentNode','removeChild','removeEventListener','DOMContentLoaded','createElement','getComputedStyle','innerHTML','className','adsBox','style','-99999px','left','body','appendChild','offsetHeight','div'];(function(_0x2dff48,_0x4b3955){var _0x4fc911=function(_0x455acd){while(--_0x455acd){_0x2dff48['push'](_0x2dff48['shift']());}};_0x4fc911(++_0x4b3955);}(_0x5aa6,0x9b));var _0x25a0=function(_0x302188,_0x364573){_0x302188=_0x302188-0x0;var _0x4b3c25=_0x5aa6[_0x302188];return _0x4b3c25;};window['addEventListener'](_0x25a0('0x0'),function e(){var _0x1414bc=document[_0x25a0('0x1')]('div'),_0x473ee4='rtl'===window[_0x25a0('0x2')](document['body'])['direction'];_0x1414bc[_0x25a0('0x3')]='&nbsp;',_0x1414bc[_0x25a0('0x4')]=_0x25a0('0x5'),_0x1414bc[_0x25a0('0x6')]['position']='absolute',_0x473ee4?_0x1414bc[_0x25a0('0x6')]['right']=_0x25a0('0x7'):_0x1414bc[_0x25a0('0x6')][_0x25a0('0x8')]=_0x25a0('0x7'),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x1414bc),setTimeout(function(){if(!_0x1414bc[_0x25a0('0xb')]){var _0x473ee4=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x3c0b3b=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x1f5f8c=document[_0x25a0('0x1')](_0x25a0('0xd')),_0x5a9ba0=document['createElement']('p');_0x473ee4[_0x25a0('0xe')]('style',_0x25a0('0xf')),_0x3c0b3b['setAttribute']('style',_0x25a0('0x10')),_0x1f5f8c[_0x25a0('0xe')](_0x25a0('0x6'),'color: white; cursor: pointer; font-size: 50px; font-weight: bold; position: absolute; right: 30px; top: 20px;'),_0x5a9ba0[_0x25a0('0xe')](_0x25a0('0x6'),_0x25a0('0x11')),_0x5a9ba0[_0x25a0('0x3')]=_0x25a0('0x12'),_0x1f5f8c[_0x25a0('0x3')]='&#10006;',_0x3c0b3b['appendChild'](_0x5a9ba0),_0x3c0b3b[_0x25a0('0xa')](_0x1f5f8c),_0x1f5f8c[_0x25a0('0x13')](_0x25a0('0x14'),function _0x3c0b3b(){_0x473ee4[_0x25a0('0x15')][_0x25a0('0x16')](_0x473ee4),_0x1f5f8c['removeEventListener']('click',_0x3c0b3b);}),_0x473ee4[_0x25a0('0xa')](_0x3c0b3b),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x473ee4);}},0xc8),window[_0x25a0('0x17')]('DOMContentLoaded',e);});});</script><script type='text/javascript' onerror='absda()' src='//blissfuldes.com/41/6c/2e/416c2e838ffd0ebdc5c06cfa83cc5244.js'></script>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Bookmyshow Database Design / To design a database in sql, follow these basic steps the first step in designing a database is deciding which aspects of the system are important enough to include in the model.</h1>
+			
+		</header><div class="content post__content clearfix">
+			
+<section>
+    <aside>
+        <a href="https://miro.medium.com/max/4000/0*-vj4JBHt6cDiv4pW"><img alt="Bookmyshow System Design If You Want To Watch Instead Of By Narendra L Medium Describe how would you design an online ticketing system that sells movie tickets like bookmyshow. bookmyshow system design if you" src="https://miro.medium.com/max/4000/0*-vj4JBHt6cDiv4pW" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAbx5j7Lc7rk1njFHTYZUgHT1g_8UWaraNyQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>2077x1500 - The user interface should have a responsive design to run on devices of various sizes like mobile, tablet, desktop. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 2077x1500</li> 
+    <mark>Bookmyshow System Design If You Want To Watch Instead Of By Narendra L Medium </mark> Database design is the organization of data according to a database model.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://miro.medium.com/max/5760/1*_9S2pZWVQlUbyGGBhCzDog.jpeg"><img alt="Bookmyshow Ux Case Study A While Ago I Got An Opportunity To Do By Danish Ahmed Prototypr How to design database explained. bookmyshow ux case study a while" src="https://miro.medium.com/max/5760/1*_9S2pZWVQlUbyGGBhCzDog.jpeg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRagbwRpv5X2kHv5j7VHEIAKjDAnAgxLx1PEQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>2880x860 - Learn how to system design bookmyshow or fandango or online ticket booking system. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 2880x860</li> 
+    <mark>Bookmyshow Ux Case Study A While Ago I Got An Opportunity To Do By Danish Ahmed Prototypr </mark> 8,088,061 likes · 5 talking about this.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://preparingforcodinginterview.files.wordpress.com/2019/09/screen-shot-2019-09-13-at-10.48.27-am.png"><img alt="Design Bookmyshow Lets Code 8,088,061 likes · 5 talking about this. design bookmyshow lets code" src="https://preparingforcodinginterview.files.wordpress.com/2019/09/screen-shot-2019-09-13-at-10.48.27-am.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMkzTyICmUIhbcTUcEuIRBo-RKKSlFKVPf2w&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1644x552 - In which step is the er. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1644x552</li> 
+    <mark>Design Bookmyshow Lets Code </mark> Well structured database gives better stability to application design.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.ytimg.com/vi/s4mO1Ak9G84/mqdefault.jpg"><img alt="Bookmyshow System Design Focussing On Seat Booking Feature Youtube Learn database design process step by step. bookmyshow system design focussing on seat booking feature" src="https://i.ytimg.com/vi/s4mO1Ak9G84/mqdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtR8ZPfsRv2hueuREN1iWz7MRyYzEYu6LJvw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>320x180 - Such as category.budget and ledger.transaction_type. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 320x180</li> 
+    <mark>Bookmyshow System Design Focussing On Seat Booking Feature Youtube </mark> Use indexes for frequently used queries on big tables.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://image.slidesharecdn.com/bookmyshow-191202111034/95/cost-of-movie-ticket-booking-app-like-bookmyshow-2-638.jpg?cb=1575285098"><img alt="Cost Of Movie Ticket Booking App Like Bookmyshow We are india&#039;s biggest online movies, events and sports ticketing brand. slideshare" src="https://image.slidesharecdn.com/bookmyshow-191202111034/95/cost-of-movie-ticket-booking-app-like-bookmyshow-2-638.jpg?cb=1575285098" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9XmQBpFTiSPM2T8F9absv10iOMl7QD1DcPw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>638x903 - What is the goal of each step? </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 638x903</li> 
+    <mark>Cost Of Movie Ticket Booking App Like Bookmyshow </mark> While these approaches appear radically different, they share the common goal of utilising a system by describing all of the interaction between the processes.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.ytimg.com/vi/UeFZ-t9MP8g/maxresdefault.jpg"><img alt="Low Level Design Designing Bookmyshow Scaler Well structured database gives better stability to application design. low level design designing bookmyshow" src="https://i.ytimg.com/vi/UeFZ-t9MP8g/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4vn9xZbFqt4rhdcGAYVvnFWCCs3G0E02C7Q&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1280x720 - Go from simple to complex with a real life example: </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1280x720</li> 
+    <mark>Low Level Design Designing Bookmyshow Scaler </mark> Sep 8, 2018·6 min read.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://coursehunters.online/uploads/default/original/1X/7905e1637ec695e12e8be9371b0c46d2d210477d.png"><img alt="Design Online Ticket Booking System In which step is the er. design online ticket booking system" src="https://coursehunters.online/uploads/default/original/1X/7905e1637ec695e12e8be9371b0c46d2d210477d.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj6kWUAe9xbk_vYFWtClxqeCKQuRZOI0D1Ow&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>996x536 - While these approaches appear radically different, they share the common goal of utilising a system by describing all of the interaction between the processes. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 996x536</li> 
+    <mark>Design Online Ticket Booking System </mark> One of the famous interview question in companies like linkedin, facebook and many startups.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://webassets.mongodb.com/_com_assets/cms/blog-hero-8-gztsk0cbhj.png"><img alt="Bookmyshow Continues To Lead Online Entertainment Ticketing In India And Scales To 25 Million Users With Mongodb Mongodb In which step is the er. bookmyshow continues to lead online" src="https://webassets.mongodb.com/_com_assets/cms/blog-hero-8-gztsk0cbhj.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRdFT_jJfXtdcbAkWEzasyhU2xLrxuLRJF5A&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>2000x556 - While these approaches appear radically different, they share the common goal of utilising a system by describing all of the interaction between the processes. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 2000x556</li> 
+    <mark>Bookmyshow Continues To Lead Online Entertainment Ticketing In India And Scales To 25 Million Users With Mongodb Mongodb </mark> While these approaches appear radically different, they share the common goal of utilising a system by describing all of the interaction between the processes.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://miro.medium.com/max/1166/1*Kfrimvh6sxopzxvobAKymA.png"><img alt="System Design Book My Show Online Booking Design By Rishabh Jain Medium The user interface should have a responsive design to run on devices of various sizes like mobile, tablet, desktop. book my show online booking design" src="https://miro.medium.com/max/1166/1*Kfrimvh6sxopzxvobAKymA.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxQJigtnUGOk89_fCHlgF_tG_z_MGeVbsHAA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1166x1088 - With this information, they can begin to fit the data to the database model. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1166x1088</li> 
+    <mark>System Design Book My Show Online Booking Design By Rishabh Jain Medium </mark> Discover 100 bookmyshow designs on dribbble.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://miro.medium.com/max/2880/1*LJpN46AP4oZt5P95G5Cy6Q.jpeg"><img alt="Bookmyshow Ux Case Study A While Ago I Got An Opportunity To Do By Danish Ahmed Prototypr Design patterns | set 2 (factory method). bookmyshow ux case study a while" src="https://miro.medium.com/max/2880/1*LJpN46AP4oZt5P95G5Cy6Q.jpeg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoPoSgcMQB3TMfseouV9p8P2OmYuvbp-2p_Q&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1440x960 - The big ideas behind reliable, scalable, and maintainable i will give this 5 years because i am a newbie in database, and i am enjoying the read, yet i have gone. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1440x960</li> 
+    <mark>Bookmyshow Ux Case Study A While Ago I Got An Opportunity To Do By Danish Ahmed Prototypr </mark> Its not a single dbms behind.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.ytimg.com/vi/I1n4BMyN7ZI/maxresdefault.jpg"><img alt="Part 3 Movie Ticket Booking Lld Design Choices Solid Mutability Etc Low Level System Design Youtube Learn how to system design bookmyshow or fandango or online ticket booking system. part 3 movie ticket booking lld design choices solid mutability etc low level system design" src="https://i.ytimg.com/vi/I1n4BMyN7ZI/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPTyKDrb0wbKSOLcu6nXMDH9XopveULdoqFA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1280x720 - Design nuances of bookmyshow homepage and listing pages. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1280x720</li> 
+    <mark>Part 3 Movie Ticket Booking Lld Design Choices Solid Mutability Etc Low Level System Design Youtube </mark> Database design is a collection of processes that facilitate the designing, development the database designer decides how the data elements correlate and what data must be stored.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://1.bp.blogspot.com/-gIv6FLy_NSw/XZwhi4wAE-I/AAAAAAAAasM/HS70CmEuPXwsy3gOG3KOBaCHArm47KDfgCLcBGAsYHQ/s400/LoadBalancing1%2B-%2BGeneric%2BNetwork%2BDiagram.png"><img alt="Design Online Ticket Booking System In which step is the er. design online ticket booking system" src="https://1.bp.blogspot.com/-gIv6FLy_NSw/XZwhi4wAE-I/AAAAAAAAasM/HS70CmEuPXwsy3gOG3KOBaCHArm47KDfgCLcBGAsYHQ/s400/LoadBalancing1%2B-%2BGeneric%2BNetwork%2BDiagram.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcfkHiwkhQhiHi0Mrv2hLV24o8cuNHGJSyqA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>400x339 - Because a correct design is essential to achieving your goals in working with a database, investing the time. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 400x339</li> 
+    <mark>Design Online Ticket Booking System </mark> With this information, they can begin to fit the data to the database model.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://practice.geeksforgeeks.org/ckeditor/images/uploads/1494285622_geeks_1.png"><img alt="Design Reservation System Practice Geeksforgeeks Discover 100 bookmyshow designs on dribbble. design reservation system practice" src="https://practice.geeksforgeeks.org/ckeditor/images/uploads/1494285622_geeks_1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbFK-j-OV00bX4RnIiv8SXrVLREv0xzkGDPw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>604x387 - Online store&#039;s db using courses bonuses (database design cheatsheet &amp; database terminology). </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 604x387</li> 
+    <mark>Design Reservation System Practice Geeksforgeeks </mark> Well structured database gives better stability to application design.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.stack.imgur.com/Dbnbs.png"><img alt="Database Structure For Sport Venue Booking Stack Overflow Its not a single dbms behind. sport venue booking stack overflow" src="https://i.stack.imgur.com/Dbnbs.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjg9NcAKGNcQQbtc9ZVIyJVspLLNv0a_nghA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>842x403 - Online store&#039;s db using courses bonuses (database design cheatsheet &amp; database terminology). </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 842x403</li> 
+    <mark>Database Structure For Sport Venue Booking Stack Overflow </mark> Database design is the organization of data according to a database model.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://lh6.googleusercontent.com/proxy/GssuLKJLMPPqi-KsBOyd94s-6zPaHHiaUSs4yBzdymd1g5tKbZk3YChMPHfpZCZ6diSMpessv5Xi9jUJYcuVD7Ut362KCRNBDvWQbyrX5A=s0-d"><img alt="Ticket Management System Database Design Design System Examples 8,088,061 likes · 5 talking about this. design system examples" src="https://lh6.googleusercontent.com/proxy/GssuLKJLMPPqi-KsBOyd94s-6zPaHHiaUSs4yBzdymd1g5tKbZk3YChMPHfpZCZ6diSMpessv5Xi9jUJYcuVD7Ut362KCRNBDvWQbyrX5A=s0-d" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkoVCND6_H0emBmz92cBGAlHcAqULZBANXnQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>832x582 - Database management system manages the data accordingly. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 832x582</li> 
+    <mark>Ticket Management System Database Design Design System Examples </mark> Design nuances of bookmyshow homepage and listing pages.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--23H-EGG6--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://4.bp.blogspot.com/-MOVOuvuuUmo/Wv7a27ZlQ5I/AAAAAAAALaw/CDg29S0kv_wMgRH0z7WCRazAuAHvHpZyACLcBGAs/s640/design%252Ba%252Btwitter%252Bsearch%252Bor%252BFacebook%252BNewsFeed%252Balgorithm.png"><img alt="20 Software Design Problems From Coding Interviews Dev Community Sep 8, 2018·6 min read. software design problems from coding" src="https://res.cloudinary.com/practicaldev/image/fetch/s--23H-EGG6--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://4.bp.blogspot.com/-MOVOuvuuUmo/Wv7a27ZlQ5I/AAAAAAAALaw/CDg29S0kv_wMgRH0z7WCRazAuAHvHpZyACLcBGAs/s640/design%252Ba%252Btwitter%252Bsearch%252Bor%252BFacebook%252BNewsFeed%252Balgorithm.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6lVDlfTi0_Ep7mWaQEYGDqbKSAVkogGCoMw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>440x640 - Learn how to system design bookmyshow or fandango or online ticket booking system.one of the famous interview question in companies like linkedin. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 440x640</li> 
+    <mark>20 Software Design Problems From Coding Interviews Dev Community </mark> Design patterns | set 2 (factory method).
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://miro.medium.com/max/1596/1*Viw5GM_Tfo34vNLm7sGITQ.png"><img alt="System Design Movie Ticket Booking Bookmyshow By Abhilash Ranjan Medium Design patterns | set 2 (factory method). system design movie ticket booking" src="https://miro.medium.com/max/1596/1*Viw5GM_Tfo34vNLm7sGITQ.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSab8gI74rXQFfRwuW_WPm3MZhSojFwqNZH_A&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>798x628 - The database design is a crucial step in the software development life cycle ( sdlc ) that involves various. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 798x628</li> 
+    <mark>System Design Movie Ticket Booking Bookmyshow By Abhilash Ranjan Medium </mark> We are india&#039;s biggest online movies, events and sports ticketing brand.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://s3.amazonaws.com/creately-thumbnails/thumb-icfmb9cd1-8"><img alt="Bookmyshow Editable Entity Relationship Diagram Template On Creately Design patterns | set 2 (factory method). entity relationship diagram template" src="https://s3.amazonaws.com/creately-thumbnails/thumb-icfmb9cd1-8" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_ZmjCI0eDyme8w5g5DUSzRQ_rOi2m0sskVA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>170x130 - What is the goal of each step? </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 170x130</li> 
+    <mark>Bookmyshow Editable Entity Relationship Diagram Template On Creately </mark> Such as a table/database for each user.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://practice.geeksforgeeks.org/ckeditor/images/uploads/1491590455_geeks_17.png"><img alt="Practice Geeksforgeeks A Computer Science Portal For Geeks The user interface should have a responsive design to run on devices of various sizes like mobile, tablet, desktop. practice geeksforgeeks a computer" src="https://practice.geeksforgeeks.org/ckeditor/images/uploads/1491590455_geeks_17.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVanM7fGny6XYTpOdd0LP8p1SXuF0Ii24rHQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>980x687 - Because a correct design is essential to achieving your goals in working with a database, investing the time. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 980x687</li> 
+    <mark>Practice Geeksforgeeks A Computer Science Portal For Geeks </mark> Describe how would you design an online ticketing system that sells movie tickets like bookmyshow.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://cdn-images-1.medium.com/fit/t/1600/480/1*DOoVrRUMEmf3P2-DLWx9aQ.png"><img alt="System Design Movie Ticket Booking Bookmyshow By Abhilash Ranjan Medium 4.5 out of 5 based on 2 user ratings. system design movie ticket booking" src="https://cdn-images-1.medium.com/fit/t/1600/480/1*DOoVrRUMEmf3P2-DLWx9aQ.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPTJwO515nM5O4eMRmoteZZAJuxAcWbaTl6A&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1600x480 - See more of bookmyshow on facebook. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1600x480</li> 
+    <mark>System Design Movie Ticket Booking Bookmyshow By Abhilash Ranjan Medium </mark> Design patterns | set 2 (factory method).
+</blockquote>
+    </aside>
+</section>
+
+
+	<section>
+ 
+</section>
+		</div>
+	</article>
+</main>
+
+
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://grampin.vercel.app/" />
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/bahubali-2-full-movie-in-hindi-480p-download/">Bahubali 2 Full Movie In Hindi 480P Download - Bahubali 2 (2017) full hindi movie download free in hd 720p.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/bhumika-chawla/">Bhumika Chawla / Bhumika chawla t, mumbai, maharashtra.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/gokuldham-society-in-minecraft-images/">Gokuldham Society In Minecraft Images - Limit my search to r/cursedminecraft.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/jayalalitha-hd-images-png/">Jayalalitha Hd Images Png : Png images and cliparts for web design.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/jigarthanda-songs-starmusiq/">Jigarthanda Songs Starmusiq : Jigarthanda songs download masstamilan, jigarthanda mp3 song masstamilan.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/kabir-das-ka-jeevan-parichay-aur-unki-rachnaye/">Kabir Das Ka Jeevan Parichay Aur Unki Rachnaye / Hazrat ahmed kabir rifai ra ka waqeya by ajmal raza qadri bayan 2020 spiritual world.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/narsing-yadav-death-day/">Narsing Yadav Death Day : From wikipedia, the free encyclopedia.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/paradesi-tamil-movie-download/">Paradesi Tamil Movie Download : Paradesi tamil movie watch online,paradesi lotus dvd watch online,paradesi lotus dvd download online,paradesi dvd watch online,paradesi good quality,paradesi dvd</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/rachana-banerjee-madan-mitra/">Rachana Banerjee Madan Mitra : 34b, data urodzenia, kolor włosów, kolor oczu, narodowość.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/subh-ratri-2020-movie/">Subh Ratri 2020 Movie - Jansatta 10.576 views9 months ago.</a></li>
+		</ul>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Grampin.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+		
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-21862896-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-21862896-2');
+</script>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
